@@ -1,0 +1,5 @@
+import re
+f = open('bit torrent trackers', 'r')
+text = f.read()
+arr = re.findall(r'(\w+)', text)
+print(arr)
